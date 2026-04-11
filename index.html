@@ -437,7 +437,7 @@ const categories = {
   'fruehstueck': {
     title: 'Frühstück & Porridge',
     desc: 'Der richtige Start in den Tag',
-    recipes: ['blitzruehrei', 'porridge', 'crepes', 'omelette-cheese', 'omelette-zucchini', 'bananenbrot', 'mugcake', 'porridge-schoko', 'milchreis', 'pudding-oats', 'proteinbombe']
+    recipes: ['shakshuka', 'blitzruehrei', 'porridge', 'crepes', 'omelette-cheese', 'omelette-zucchini', 'bananenbrot', 'mugcake', 'porridge-schoko', 'milchreis', 'pudding-oats', 'proteinbombe']
   },
   'desserts': {
     title: 'Desserts & Süßes',
@@ -517,6 +517,45 @@ const recipes = {
   'joghurt-bars': { title: 'Protein Joghurt Bars', category: 'Fitness Snacks', time: '10 min + 2h', servings: '6 Stück', done: false },
   'protein-smoothie': { title: 'Protein Smoothie', category: 'Fitness Snacks', time: '5 min', servings: '1 Glas', done: false },
   'berry-fluff': { title: 'Berry Fluff', category: 'Fitness Snacks', time: '7 min', servings: '1 Portion', done: false },
+
+  'shakshuka': {
+    title: 'Shakshuka',
+    category: 'Frühstück',
+    time: '25 min',
+    servings: '1 Portion',
+    done: true,
+    doneDate: 'April 2026',
+    photo: 'shakshuka.jpg',
+    baseServings: 1,
+    servingsLabel: 'Portion',
+    ingredients: [
+      { name: 'Große Zwiebel', amount: '1 Stück (~300g)' },
+      { name: 'Kirschtomaten', amount: '210g' },
+      { name: 'Eier', amount: '2 Stück' },
+      { name: 'Olivenöl', amount: '1 EL' },
+      { name: 'Butter', amount: '1 EL' },
+      { name: 'Tomatenmark', amount: '~50g (½ Tube)' },
+      { name: 'Knoblauch', amount: '1 Zehe (oder ¼ TL Knoblauchpulver)' },
+      { name: 'Paprikapulver', amount: '1 TL' },
+      { name: 'Chili / Cayennepfeffer', amount: '¼ TL' },
+      { name: 'Salz & Pfeffer', amount: 'nach Geschmack' },
+      { name: 'Joghurt fettarm', amount: '2 EL (zum Garnieren)' },
+      { name: 'Petersilie', amount: 'zum Garnieren' },
+      { name: 'Baguette / Brot', amount: 'nach Belieben' },
+    ],
+    steps: [
+      'Zwiebel halbieren und in Streifen schneiden. 1 EL Olivenöl in einer Pfanne bei mittlerer Hitze erhitzen. Zwiebel ~5 Min langsam dünsten bis sie weich und leicht goldbraun sind.',
+      'Knoblauch (oder Pulver) dazu, 1 Min mitdünsten.',
+      'Gewürze direkt in die Pfanne: Paprikapulver, Chili, Salz, Pfeffer. 30 Sek anrösten.',
+      'Tomatenmark einrühren, kurz mitrösten.',
+      'Kirschtomaten rein, mit einer Gabel leicht zerdrücken. 8–10 Min köcheln lassen bis die Sauce eindickt.',
+      'Butter einrühren — gibt Geschmack und Glanz. Optional: 1 EL Joghurt direkt in die Sauce für mehr Cremigkeit.',
+      '2 Mulden in die Sauce drücken, je 1 Ei hineinschlagen. Deckel drauf, 4–6 Min garen — Eigelb sollte noch leicht wackeln.',
+      'Mit Joghurt, Petersilie und Paprikapulver garnieren. Mit Baguette oder Brot servieren.',
+    ],
+    macros: { kcal: 505, protein: 20, carbs: 43, fat: 29 },
+    note: 'Erst Olivenöl zum Anbraten, Butter erst wenn die Tomaten ausgelaufen sind. Joghurt direkt in die Sauce einrühren macht sie cremiger als nur drüber. <strong>Mit Baguette (100g):</strong> +261 kcal / +6g Protein.',
+  },
 
   'blitzruehrei': { title: '3 Minuten Blitz Rührei', category: 'Frühstück', time: '3 min', servings: '1 Portion', done: false },
   'porridge': { title: 'Protein Energy Porridge', category: 'Frühstück', time: '10 min', servings: '1 Portion', done: false },
